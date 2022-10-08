@@ -1,0 +1,45 @@
+<form action="" method="post">
+Name: <input type="text" name="name" title="name">
+<br>
+Surname: <input type="text" name="surname" title="surname">
+<br>
+Password: <input type="password" name="password" title="password">
+<br>
+Gender: Male<input type="radio" name="gender" value="M" title="male">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Female<input type="radio" name="gender" value="F" title="female" checked>
+<br>
+Address: <input type="text" name="address" title="address">
+<br>
+Town: <input type="text" name="town" title="town">
+<br>
+County: <input type="text" name="county" title="county">
+<br>
+Phone: <input type="text" name="phone" title="phone">
+<br>
+Email: <input type="text" name="email" title="email">
+<br>
+Date of Birth: <select name="day" title="day">
+<?php 
+ 
+for (  $x=1;$x<32;$x++)
+echo "<option value=". $x .">" . $x . "</option>";
+?>
+</select>
+/
+<select name="month" title="month">
+<?php 
+for ($x=1;$x<13;$x++)
+echo "<option value=". $x . ">" . $x . "</option>";
+?>
+</select>
+/
+<select name="year" title="year">
+<?php 
+for ($x=2021;$x>1920;$x--)
+echo "<option value=" . $x .">" . $x . "</option>";
+?>
+</select>
+
+
+<input type="submit" value="Sign Up" name="sub">
+</form>

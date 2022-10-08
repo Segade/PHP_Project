@@ -1,0 +1,393 @@
+html, body {
+width: 100%;
+height: 100%;
+font-size: 100%;
+font-family: Arial, Verdana, Helvetica, Sans-Serif ;
+}
+
+*
+{
+padding: 0;
+margin: 0;
+}
+
+.container
+{
+position: relative;
+min-height: 100%;
+ }
+
+header
+{ 
+
+width: 100%;
+height: 15%;
+ 
+display: flex;
+justify-content: flex-start;
+
+}
+  
+.property 
+{
+display: flex;
+flex: 5;
+flex-direction: column;
+justify-content: center;
+background: #f1bf00;
+color: #aa151b;
+}
+
+.property  h1
+{
+font-size: 1.4rem;
+font-family: "helvetica";
+}
+
+
+.content
+{
+ 
+padding-bottom: 2.5em;
+}
+
+.main, .main_reserv 
+{
+display:flex;
+ flex-direction: column;
+justify-content: flex-start;
+ align-items: center;
+width: 100%;
+height: 100%;
+ padding-bottom: 0%;
+}
+
+.main_reviews
+{
+padding-top: 3em;
+}
+
+.main_reserv , .amenities, .arrange_text, .arrange_text2, .myreviews, .geoloc, .social
+{
+font-size: 0.6rem;
+}
+
+
+.main_reserv table 
+{
+
+padding-top: 1em; 
+}
+
+.main_reserv legend  
+{
+font-weight: bold;
+}
+
+.casa 
+{
+font-family: "helvetica";
+font-weight: bold;
+}
+
+.menu
+{
+display: flex;
+justify-content: center;
+ 
+}
+ 
+   nav 
+{
+display: block;
+width:100%;
+font-size: 0.5rem;
+margin: 0 auto;
+  padding: 0.25em;
+
+  }
+ 
+nav li 
+{
+  display: inline;
+  list-style-type: none;
+  padding: 0.25em;
+  }
+  
+.social, .myreviews
+{
+margin-left: 1em;
+}  
+
+.social
+{
+width: 15%;
+}
+footer
+{
+position: absolute;
+bottom:0;
+ width: 100%;
+height: 2.5em;
+
+font-size: 0.4rem;
+
+}
+
+.foot_text
+{
+float: left; 
+width: 60%;
+background: #f1bf00;
+}
+ 
+.foot_flag
+{
+float: right;
+width: 40%;
+ background: #f1bf00;
+text-align: left;
+}
+
+
+.home_text
+{
+width: 75%;
+height: 50%;
+background-size: contain;
+font-size: 0.6rem;
+}
+
+ 
+
+
+
+
+.arrange_text, .arrange_text2
+{
+width:30%;
+}
+
+.arrange_text
+{
+margin-left:1em;
+}
+ 
+.photo_house, .photo_beach img
+{
+border-radius: 5%;
+border: 4px solid #f1bf00;
+}
+
+figcaption
+{
+color: #aa151b;
+}
+
+.home_reserv 
+{
+display: flex;
+justify-content: center;
+flex-direction: column; 
+align-items: center;
+}
+
+.amenities
+{
+display: flex;
+justify-content: center;
+flex-direction: column;
+flex:1;
+}
+
+.amenities_sub
+{
+padding-left: 1em;
+}
+
+.amenities img
+{
+display: none;
+}
+
+
+
+.main_reviews
+{
+display:flex;
+ flex-direction: column;
+justify-content: flex-start;
+ align-items: center;
+width: 100%;
+height: 100%;
+ padding-bottom: 0%;
+
+}
+
+
+.myreview
+{
+width:90%;
+padding-bottom: 2em;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 5%;
+border: 2px solid #000;
+border-radius: 5px;
+}
+
+.review_name
+{
+padding-top: 1em;
+font-weight: bold;
+}
+
+
+ 
+.main_reserv h3
+{
+text-align: center;
+}
+
+.form_set
+{
+width:60%;
+}
+
+.rates
+{
+display: flex;
+ background:  #ffcccc;
+}
+
+.currency
+{
+text-align: center;
+}
+
+.currency li
+{
+  list-style-type: none;
+}
+
+.widget
+{
+margin-left: 1em;
+display: none;
+}
+
+
+/* tablets */
+@media screen and (min-width: 577px)
+{
+
+.property h1
+{
+font-size: 2rem;
+}
+
+
+.photo_house, .photo_beach img
+{
+border-radius: 0%;
+border: 4px solid #aa151b; 
+}
+
+.home_text
+{
+
+padding-left: 5%; 
+padding-right: 5%; 
+
+}
+
+
+footer 
+{
+font-size: 0.6rem;
+}
+
+
+.home_left
+{
+display:flex;
+flex-direction: column;
+order:1;
+}
+
+.photo_beach
+{
+display: flex;
+order: -1;
+}
+
+
+}  /* media query 577 for tablets */
+
+
+
+/* desktop */
+@media screen and (min-width: 769px)
+{
+
+.main
+{
+flex-direction: column;
+}
+
+
+.photo_house, .photo_beach img
+{
+border-radius: 5%;
+border: 4px solid #f1bf00;
+}
+
+.property h1
+{
+font-size: 3rem;
+}
+top
+nav 
+{
+font-size: 1.2rem;
+}
+
+.main
+{
+ align-items: flex-start;
+}
+
+.home_text
+{
+font-size: 1rem;
+}
+
+.home_left
+{
+order: -1;
+}
+
+.photo_beach
+{
+order: 1;
+}
+
+.main_reserv , .amenities, .arrange_text, .arrange_text2, .myreviews, .geoloc, .social
+{
+font-size: 1rem;
+}
+
+
+
+.amenities img
+{
+display: block;
+}
+
+
+.widget
+{
+display: block;
+}
+ 
+} /* media  769 for desktop */
